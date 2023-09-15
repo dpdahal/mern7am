@@ -1,6 +1,7 @@
 body{
     margin: 0;
     padding: 0;
+    font-family: sans-serif;
 }
 
 .container{
@@ -86,9 +87,14 @@ body{
 
 }
 .header-main .search-section .form-control{
-    width: 90%;
+    width: 85%;
     height: 50px;
     border: 2px solid rgb(239, 237, 237);
+}
+
+.header-main .search-section input[type=search]{    
+    padding: 0 0 0 15px;
+   
 }
 
 .header-main .search-section .form-control::placeholder{
@@ -99,5 +105,84 @@ body{
 .menu{
     width: 100%;
     height: 50px;
-    background: red;
+    background: rgb(32, 1, 144);
+}
+
+.menu a{
+    color: white;
+    text-decoration: none;
+}
+.menu ul{
+    display: flex;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    z-index: 500;
+    position: relative;
+}
+.menu ul li{
+    min-width: 100px;
+    line-height: 50px;
+    text-align: center;
+}
+
+.menu ul ul{
+    display: flex;
+    flex-direction: column;
+    display: none;
+    position: absolute;
+}
+.menu ul li:hover{
+    background: orange;
+}
+
+.menu ul li:hover ul{
+    display: block;
+    background: rgb(32, 1, 144);
+}
+.banner-section{
+    width: 100%;
+    height: 500px;
+    position: relative;
+}
+
+.banner-section img{
+    width: 100%;
+    height: 100%;
+    z-index: -100;
+}
+
+.banner-text{
+    position: absolute;
+    top: 100px;
+    background: lightgray;
+    width: 50%;
+    left: 50px;
+    border-radius: 10px;
+    padding: 20px;
+
+}
+
+.courses{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 10px;
+    
+}
+.courses .course{
+    padding: 20px;
+    border: 2px solid rgb(238, 237, 237);
+    border-radius: 10px;
+
+}
+
+.courses .course .course-image img{
+    width:100%;
+}
+
+footer{
+    margin: 20px 0 0 0;
+    width: 100%;
+    background: blue;
+    min-height: 300px;
 }

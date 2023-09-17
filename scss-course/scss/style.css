@@ -1,0 +1,23 @@
+body {
+  background: rgb(246, 245, 247);
+}
+
+nav {
+  width: 90%;
+  height: 40px;
+}
+nav ul {
+  display: flex;
+  list-style-type: none;
+}
+nav ul li {
+  line-height: 40px;
+  min-width: 100px;
+  text-align: center;
+}
+nav ul li a {
+  text-decoration: none;
+}
+nav ul li :hover {
+  background: red;
+}/*# sourceMappingURL=style.css.map */

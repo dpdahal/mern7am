@@ -1,0 +1,25 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+    width: 100%;
+    height: 300px;
+    background: red;
+}
+
+@media screen and (max-width:500px) {
+    .container{
+        background: green;
+    }
+    
+}
+
+/* 
+100% 12
+8.33
+col 
+16.66
+
+*/

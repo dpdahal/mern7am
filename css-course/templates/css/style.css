@@ -186,3 +186,29 @@ footer{
     background: blue;
     min-height: 300px;
 }
+
+
+@media screen and (max-width:720px) {
+    .container{
+        margin: auto;
+      
+    }
+    .top-right-section{
+        display: none;
+        background: red;
+        
+    }
+    .company-name{
+        display: none;
+    }
+
+    .search-section{
+        background: red;
+        width: 80%;
+    }
+
+    .courses{
+        display: flex;
+        flex-direction: column;
+    }
+}

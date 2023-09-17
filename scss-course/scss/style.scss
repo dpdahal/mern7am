@@ -1,0 +1,31 @@
+$bg_color:rgb(246, 245, 247);
+
+body{
+    background: $bg_color;
+}
+
+nav{
+    width: 90%;
+    height: 40px;
+
+    ul{
+        display: flex;
+        list-style-type: none;
+
+        li{
+            line-height: 40px;
+            min-width: 100px;
+            text-align: center;
+
+            a{
+                text-decoration: none;
+            }
+
+            :hover{
+                background: red;
+        }
+        }
+        
+    }
+}
+

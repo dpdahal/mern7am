@@ -172,3 +172,51 @@
 // console.log(typeof(a))
 
 // console.log(typeof(demo()))
+
+// let a=[5,6,7]
+// let b =a;
+// b.push(50)
+// reference of same memory
+
+
+// function add(x,y){
+//     return x+y;
+// }
+
+// console.log(typeof add)
+
+// console.log(add(5,6))
+
+
+// function users(){
+//     console.log("hello user");
+// }
+
+// (function(){
+//     console.log("hello users")
+// }())
+
+// let users =(name)=>{
+//     return `Hello welcome ${name}`;
+// }
+// users.userinfo ="hello users info";
+// console.log(users.userinfo)
+// console.log(typeof users);
+
+
+// function add(){
+
+// }
+
+// let a = add;
+
+
+// let users={
+//     name:'ram',
+//     age:30
+// }
+
+// let user = new Function('name','age','return "hello "+name+" "+age');
+
+// // console.log(user('ram',30))
+// console.log(new Function())

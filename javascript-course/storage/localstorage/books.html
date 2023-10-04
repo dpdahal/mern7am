@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <blockquote>
+        <h1 id="userinfo"></h1>
+        <article>
+            <h1>JavaScript</h1>
+            <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                 Reiciendis incidunt dolores consequatur dolorem iste, ullam consequuntur doloremque officia? Exercitationem, nobis facere autem expedita animi laboriosam doloribus recusandae architecto minus voluptatibus.
+            </p>
+        </article>
+        <article>
+            <h1>Nodejs</h1>
+            <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                 Reiciendis incidunt dolores consequatur dolorem iste, ullam consequuntur doloremque officia? Exercitationem, nobis facere autem expedita animi laboriosam doloribus recusandae architecto minus voluptatibus.
+            </p>
+        </article>
+
+        <button onclick="logout()">Logout</button>
+    </blockquote>
+
+    <script>
+        let username = localStorage.getItem("username");
+        document.getElementById('userinfo').innerHTML =`Welcome: ${username}`;
+        if(username===null){
+            window.location.href ='index.html';
+        }
+
+        function logout(){
+            localStorage.clear();
+            window.location.href ='index.html';
+        }
+
+
+    </script>
+    
+</body>
+</html>

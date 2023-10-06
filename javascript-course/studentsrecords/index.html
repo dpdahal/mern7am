@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <blockquote>
+        <h1>Students Record</h1>
+        <hr>
+        <form action="">
+            <label for="name">Name</label><br>
+            <input type="text" id="name"><br>
+            <label for="email">Email</label><br>
+            <input type="text" id="email"><br>
+            <label>Gender</label><br>
+            <label><input type="radio" name="gender" id="gender" value="male">Male</label>
+            <label><input type="radio" name="gender" id="gender" value="female">Female</label> <br>
+            <label>Course</label><br>
+            <label><input type="checkbox" class="course" value="html">HTML</label>
+            <label><input type="checkbox" class="course" value="css">CSS</label>
+            <label><input type="checkbox" class="course" value="javascript">JavaScript</label>
+            <br>
+            <label for="country">Country</label><br>
+            <select name="country" id="country">
+                <option value="">------Select Country--------</option>
+                <option value="nepal">Nepal</option>
+                <option value="china">China</option>
+            </select>
+            <br><br>
+            <input type="file" id="image">
+
+            <br><br>
+            <button id="addRecord">Add Record</button>
+
+
+        </form>
+
+        <hr>
+        <div id="show"></div>
+
+    </blockquote>
+
+    <script src="./js/custom.js"></script>
+</body>
+</html>
